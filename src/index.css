@@ -1,0 +1,12 @@
+h1 {
+    color: blue;
+}
+
+.celulares {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.celulares div {
+    margin: 10px;
+}
