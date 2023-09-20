@@ -1,6 +1,15 @@
+import { useState} from 'react'
 import './Card.css'
 
 function Card(props) {
+    // Un estado se crea coin base a una constante y teniendo un valor inicial
+    var [counter, setCounter] = useState(0)
+    // el counter es el valor que se va a modificar, (es una variable)
+    // el setCounter es la funcion que se va a encargar de modificar el valor de counter
+
+    let handlerCounter2= () => {
+        setCounter(counter + 1)
+    }
     return (
       <>
         <div className='card-style'>
@@ -8,9 +17,13 @@ function Card(props) {
             <h2>{props.item.title}</h2>
             <p>{props.item.description}</p>
             <p><strong>{props.item.price}</strong></p>
+            <h4>contador :D : {counter}</h4>
+            <button onClick={handlerCounter2}>push me</button>
         </div>
       </>
     )
 }
 
 export default Card
+
+// State - estados en react- 

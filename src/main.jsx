@@ -32,9 +32,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         return  <Card item={item} key={index} />
       })
     }
-
    </section>
-
-   <Menu/>
   </React.StrictMode>,
 )
