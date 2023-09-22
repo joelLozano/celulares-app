@@ -1,23 +1,32 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import Card from '../card/Card'
 
 export default function Productos() {
+    const [productos, setProductos] = useState()
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() =>{
-        fetch('./productos.json')
+        fetch('https://api-pelis-back.onrender.com/celulares')
         .then(response => response.json())
-        .then(data => console.log(data))
+        .then(data => {
+            setProductos(data)
+            setIsLoading(false)
+        })
     }, [])
 
-  return (
-    <>
-    <section className='celulares'>
-    {/* {
-      celulares.map((item, index) => {
-        return  <Card item={item} key={index} />
-      })
-    } */}
-   </section>
-    </>
-  )
+    if (isLoading) {
+        return <h1>Cargando...</h1>
+    } else {
+        return (
+            <>
+            <section className='celulares'>
+            {
+              productos.celulares.map((item, index) => {
+                return  <Card item={item} key={index} />
+              })
+            }
+           </section>
+            </>
+         )
+    }
 }

@@ -15,7 +15,6 @@ function Card(props) {
 
   let handlerLike = () => {
     setLike(!like)
-    console.log(like)
   }
   return (
     <>
