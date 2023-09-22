@@ -1,0 +1,28 @@
+{
+    "celulares" : [
+        {
+          "title": "iphone 15",
+          "description": "Nuevo iphone super bonito y super caro",
+          "price": "$25000"
+        },
+        {
+          "title": "Xiomi 10",
+          "description": "Nuevo Xiomi super bonito y super caro",
+          "price": "$5000"
+        },
+        {
+          "title": "Galaxi 9",
+          "description": "Nuevo Galaxi super bonito y super caro",
+          "price": "$15000"
+        },
+        {
+          "title": "Huawei 10",
+          "description": "Nuevo Huawei super bonito y super caro",
+          "price": "$10000"
+        },
+        {
+          "title": "Motorola 10",
+          "description": "Nuevo Motorola super bonito y super caro",
+          "price": "$10000"}
+      ]
+}
