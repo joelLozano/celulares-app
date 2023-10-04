@@ -25,10 +25,6 @@ function Card(props) {
               <h2>{props.item.title}</h2>
               {like ? <FaHeart onClick={handlerLike}></FaHeart> : <FaRegHeart onClick={handlerLike}></FaRegHeart> }
             </div>
-            
-              
-          
-          
 
           <p>{props.item.description}</p>
           <p>
