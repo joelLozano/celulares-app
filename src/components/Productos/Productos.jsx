@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Card from '../card/Card'
+import { Link } from 'react-router-dom'
 
 export default function Productos() {
     const [productos, setProductos] = useState()
@@ -22,7 +23,11 @@ export default function Productos() {
             <section className='celulares'>
             {
               productos.celulares.map((item, index) => {
-                return  <Card item={item} key={index} />
+                return  (
+                    <Link to="/detalle" state={item}>
+                    <Card item={item} key={index} />
+                    </Link>
+                )
               })
             }
            </section>

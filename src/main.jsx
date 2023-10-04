@@ -5,6 +5,7 @@ import './index.css'
 import Home from './components/Home/Home.jsx';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Productos from './components/Productos/Productos';
+import VistaDetalle from './components/VistaDetalle/VistaDetalle.jsx'
 
 
 const routes = createBrowserRouter([
@@ -20,6 +21,10 @@ const routes = createBrowserRouter([
       {
         path: '/pantallas',
         element: <h2>Pantallas </h2>
+      },
+      {
+        path: "detalle",
+        element: <VistaDetalle/>
       }
     ]
 

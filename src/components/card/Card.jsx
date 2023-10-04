@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import "./Card.css";
+import { Link } from "react-router-dom";
 
 function Card(props) {
   // Un estado se crea coin base a una constante y teniendo un valor inicial
@@ -38,7 +39,8 @@ function Card(props) {
           >
             push me
           </button>
-        
+
+            {/* <Link to="/detalle" state={props.item}>  Ver detalle</Link> */}
       </div>
     </>
   );
