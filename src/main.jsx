@@ -16,15 +16,25 @@ const routes = createBrowserRouter([
     children: [
       {
         path: '/',
+        element: <h1>Esto es el home</h1>
+      },
+      {
+        path: '/celulares',
         element: <Productos/>
+        // children: [
+        //   {
+        //     path: 'celulares/:title',
+        //     element: <VistaDetalle key={1}/>
+        //   }
+        // ]
       },
       {
         path: '/pantallas',
         element: <h2>Pantallas </h2>
       },
       {
-        path: "detalle",
-        element: <VistaDetalle/>
+        path: "celulares/:title",
+        element:  <VistaDetalle/>
       }
     ]
 

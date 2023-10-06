@@ -16,7 +16,7 @@ export default function Menu() {
           <a className="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li className="nav-item">
-          <NavLink to="/">Celulares</NavLink>
+          <NavLink to="/celulares">Celulares</NavLink>
         </li>
         <li className="nav-item">
           <NavLink to="/pantallas">Pantallas</NavLink>
@@ -25,10 +25,6 @@ export default function Menu() {
           <a className="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-      <form className="d-flex" role="search">
-        <input type="text" />
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
