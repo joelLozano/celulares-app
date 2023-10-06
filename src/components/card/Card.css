@@ -3,9 +3,16 @@
 }
 
 .card-style {
+    border-radius: 16px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: black;
 }
 
 .likeButton {
     text-align: end;
+}
+
+.card-style img {
+    width: 300px;
+    height: 350px;
 }

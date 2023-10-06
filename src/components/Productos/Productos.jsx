@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Card from '../card/Card'
 import { Link } from 'react-router-dom'
+import './Productos.css'
 
 export default function Productos() {
     const [productos, setProductos] = useState()
@@ -42,16 +43,21 @@ export default function Productos() {
                     </div>
                 </div>
             </div>
-            <section className='celulares'>
+           
+           <div className="container">
+            <div className="row">
             {productosFilterState.map((item, index) => {
                 return  (
-                    <Link to={`/celulares/${item.title}`} state={item} key={index}>
-                    <Card item={item}  />
-                    </Link>
+                 <div className="col mt-2 mb-4 itemsCol"  key={index}>
+                    <Link to={`/celulares/${item.title}`} state={item}>
+                    <Card item={item} key={index} />
+                </Link>
+                 </div>
                 )
               })
             }
-           </section>
+            </div>
+           </div>
             </>
          )
     }

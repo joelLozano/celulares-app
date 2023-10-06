@@ -20,10 +20,10 @@ const routes = createBrowserRouter([
       },
       {
         path: '/celulares',
-        element: <Productos/>
+        element: <Productos/>,
         // children: [
         //   {
-        //     path: 'celulares/:title',
+        //     path: "celulares/:title",
         //     element: <VistaDetalle key={1}/>
         //   }
         // ]
@@ -34,7 +34,7 @@ const routes = createBrowserRouter([
       },
       {
         path: "celulares/:title",
-        element:  <VistaDetalle/>
+        element:  <VistaDetalle key={2}/>
       }
     ]
 
